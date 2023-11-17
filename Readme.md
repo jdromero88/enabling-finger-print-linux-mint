@@ -8,7 +8,7 @@ Let's proceed to the installation:
 ![apt install frpintd](/img/Screenshot%20from%202023-11-17%2009-53-17.png)
 3- Install the library/module PAM module `sudo apt install libpam-fprintd`
 ![apt install libpam](/img/Screenshot%20from%202023-11-17%2009-54-28.png)
-4- Tell the system to use the fingerprint reader `sudo pam-auth-update`
+4- Tell the system to use the fingerprint reader `sudo pam-auth-update`. make sure "Fingerprint authentication" is selected, then select "Ok" to save.
 ![pam auth update](/img/Screenshot%20from%202023-11-17%2010-01-20.png)
 5- Add or enroll your fingers print `fprintd-enroll -f [finger]` so you can do `fprintd-enroll -f right-index-finger`
 ![add your finger prints](/img/Screenshot%20from%202023-11-17%2010-36-15.png)
